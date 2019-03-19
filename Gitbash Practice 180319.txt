@@ -1,0 +1,474 @@
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git --version
+git version 2.20.1.windows.1
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git config --global user.name "devendra"
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git config --global user.email "msdevendra27@gmail.com"
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name=devendra
+user.email=msdevendra27@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+ ESCOC
+
+
+
+
+
+
+
+
+
+w64/ssl/certs/ca-bundle.crt
+
+
+
+
+s
+
+
+
+
+
+
+
+
+:
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+
+
+cd ..
+
+Devendra+Dev@Devendra MINGW64 /e
+$ cd deveops-14mar19
+bash: cd: deveops-14mar19: No such file or directory
+
+Devendra+Dev@Devendra MINGW64 /e
+$ cd Devops-14mar19
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git init
+Reinitialized existing Git repository in E:/Devops-14mar19/.git/
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git add dev1
+fatal: pathspec 'dev1' did not match any files
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git add Devendra CV
+fatal: pathspec 'Devendra' did not match any files
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git add 1
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        2
+        3
+        AD Roles and Responcibilities.docx
+        Devendra CV.doc
+        G2.txt
+        RAMA/
+        Study URLs.txt
+        dev1.txt
+        jaya transfer.txt
+        pf.txt
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git add 2 3 pf
+fatal: pathspec 'pf' did not match any files
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        2
+        3
+        AD Roles and Responcibilities.docx
+        Devendra CV.doc
+        G2.txt
+        RAMA/
+        Study URLs.txt
+        dev1.txt
+        jaya transfer.txt
+        pf.txt
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git add pf.txt dev1.txt
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1
+        new file:   dev1.txt
+        new file:   pf.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        2
+        3
+        AD Roles and Responcibilities.docx
+        Devendra CV.doc
+        G2.txt
+        RAMA/
+        Study URLs.txt
+        jaya transfer.txt
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git add .
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   1
+        new file:   2
+        new file:   3
+        new file:   AD Roles and Responcibilities.docx
+        new file:   Devendra CV.doc
+        new file:   G2.txt
+        new file:   RAMA/file1
+        new file:   RAMA/file2
+        new file:   RAMA/file4
+        new file:   Study URLs.txt
+        new file:   dev1.txt
+        new file:   jaya transfer.txt
+        new file:   pf.txt
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git rm --1 2 3
+error: unknown option `1'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git rm --1
+error: unknown option `1'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git rm --cached 1
+rm '1'
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   2
+        new file:   3
+        new file:   AD Roles and Responcibilities.docx
+        new file:   Devendra CV.doc
+        new file:   G2.txt
+        new file:   RAMA/file1
+        new file:   RAMA/file2
+        new file:   RAMA/file4
+        new file:   Study URLs.txt
+        new file:   dev1.txt
+        new file:   jaya transfer.txt
+        new file:   pf.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        1
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git rm --cached .
+fatal: not removing '.' recursively without -r
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git rm --cached 2 3 pf.txt dev1.txt
+rm '2'
+rm '3'
+rm 'dev1.txt'
+rm 'pf.txt'
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   AD Roles and Responcibilities.docx
+        new file:   Devendra CV.doc
+        new file:   G2.txt
+        new file:   RAMA/file1
+        new file:   RAMA/file2
+        new file:   RAMA/file4
+        new file:   Study URLs.txt
+        new file:   jaya transfer.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        1
+        2
+        3
+        dev1.txt
+        pf.txt
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git reset study URLs.txt
+fatal: ambiguous argument 'study': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git reset Study URLs.txt
+fatal: ambiguous argument 'Study': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git commit -m "Hello Devendra"
+[master (root-commit) 6c609c3] Hello Devendra
+ 8 files changed, 18 insertions(+)
+ create mode 100644 AD Roles and Responcibilities.docx
+ create mode 100644 Devendra CV.doc
+ create mode 100644 G2.txt
+ create mode 100644 RAMA/file1
+ create mode 100644 RAMA/file2
+ create mode 100644 RAMA/file4
+ create mode 100644 Study URLs.txt
+ create mode 100644 jaya transfer.txt
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        1
+        2
+        3
+        dev1.txt
+        pf.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git add .
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   1
+        new file:   2
+        new file:   3
+        new file:   dev1.txt
+        new file:   pf.txt
+
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git commit -m "Hello Dev"
+[master 3f1c0c4] Hello Dev
+ 5 files changed, 4 insertions(+)
+ create mode 100644 1
+ create mode 100644 2
+ create mode 100644 3
+ create mode 100644 dev1.txt
+ create mode 100644 pf.txt
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git log
+commit 3f1c0c4989bad5f1b44f56e0308f021b18c50d13 (HEAD -> master)
+Author: devendra <msdevendra27@gmail.com>
+Date:   Mon Mar 18 00:08:18 2019 +0530
+
+    Hello Dev
+
+commit 6c609c3dbd5ff64e9c7bca60e3b9240d0260ec8a
+Author: devendra <msdevendra27@gmail.com>
+Date:   Mon Mar 18 00:07:28 2019 +0530
+
+    Hello Devendra
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git log --one line
+fatal: ambiguous argument 'line': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ git log --oneline
+3f1c0c4 (HEAD -> master) Hello Dev
+6c609c3 Hello Devendra
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19 (master)
+$ cd rama
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ touch d1 d2 d3 d4
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        d1
+        d2
+        d3
+        d4
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ cat > .gitignore
+d1
+d2
+d3
+d4
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ touch r1 r2 r3
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        r1
+        r2
+        r3
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ cat > .deveignore
+r1
+r2
+r3
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .deveignore
+        .gitignore
+        r1
+        r2
+        r3
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ ^C
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)
+$ ^C
+
+Devendra+Dev@Devendra MINGW64 /e/Devops-14mar19/rama (master)

@@ -1,0 +1,13 @@
+https://docs.microsoft.com/en-us/windows-server/administration/performance-tuning/hardware/
+https://technet.microsoft.com/en-us/sysinternals/cc835722
+
+https://aws.amazon.com/events/aws-loves-windows/webinars/?sc_channel=sm&sc_campaign=windows_on_aws&sc_publisher=moi&sc_country=mult&sc_geo=apac&sc_category=mult&sc_outcome=multi&trkCampaign=aws-loves-windows&trk=li_inmail_web
+
+
+
+
+
+
+Server
+
+https://www.petri.com/migrating-from-windows-server-2003
